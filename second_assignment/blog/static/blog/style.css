@@ -14,3 +14,10 @@
 ._container {
     margin-top: 20px;
 }
+
+._card-more{
+    display: inline-block;
+    padding: 10px;
+    border-top: 1px solid rgb(0,0,0,0.125);
+    text-align: right;
+}

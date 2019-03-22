@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
         <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'blog/new.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/editor.css' %}">
         <title>LIKE LION</title>
     </head>
     <body>
@@ -21,10 +21,6 @@
                 <a class="nav-item nav-link active" href="{% url 'new' %}">글쓰기</a>
                 </div>
             </div>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2 _search-box" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
-                <button class="btn btn-dark my-2 my-sm-0 _search_button" type="submit">Search</button>
-            </form>
         </nav>
 
         <div class="container _container">

@@ -23,4 +23,6 @@ urlpatterns = [
     path('blog/<int:blog_id>/', blog.views.detail, name='detail'),  # <int:blog_id>는 path-converter // 장고에서 여러 객체들을 다루는 계층적 url이 필요할 경우에 사용함 -> '지정한 converter type의 name변수를 view 함수로 넘겨라' )
     path('blog/new/', blog.views.new, name='new'),
     path('blog/create/', blog.views.create, name='create'),
+    path('blog/<int:blog_id>/edit/', blog.views.edit, name='edit'),
+    path('blog/<int:blog_id>/delete/', blog.views.delete, name='delete'),
 ]
