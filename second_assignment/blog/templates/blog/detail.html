@@ -1,14 +1,17 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
         <title>LIKE LION</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{% url 'home' %}">LIKE LION</a>
+            <a class="navbar-brand _navbar-title" href="{% url 'home' %}">LIKE LION</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,12 +21,12 @@
                 </div>
             </div>
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2 _search-box" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
+                <button class="btn btn-dark my-2 my-sm-0 _search_button" type="submit">Search</button>
             </form>
         </nav>
 
-        <div class="container">
+        <div class="container _container">
             <h1>{{ blog.title }}</h1>
             <p>{{ blog.pub_date|date:"Y-m-d" }}</p>
             <p>{{ blog.body }}</p>

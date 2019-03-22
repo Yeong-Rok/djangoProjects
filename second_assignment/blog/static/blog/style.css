@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+._navbar-title {
+    font-weight: 700;
+}
+
+._search-box {
+    font-size: 14px;
+}
+._search_button {
+    font-size: 14px;
+}
+
+._container {
+    margin-top: 20px;
+}
